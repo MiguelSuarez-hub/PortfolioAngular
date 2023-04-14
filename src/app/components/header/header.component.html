@@ -1,0 +1,13 @@
+<header>
+  <nav class="header__navbar">
+    <a routerLink = "/home">Miguel Suarez Portfolio</a>
+    <ul>
+      <li *ngFor="let data of navData">
+        <a [routerLink]="[data.routelink]">
+          <span>{{data.label}}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+</header>
